@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-WeatherSource-069b7378-9f4f-46a2-804d-1d76ec55e956</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Bogus" Version="34.0.2" />
+		<PackageReference Include="CountryData.Bogus" Version="3.75.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.6.2" />
+		<PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="3.6.2" />
+		<PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="3.6.2" />
+		<PackageReference Include="Orleans.Clustering.CosmosDB" Version="3.0.4" />
+		<PackageReference Include="Orleans.Persistence.CosmosDB" Version="3.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+	</ItemGroup>
+</Project>
